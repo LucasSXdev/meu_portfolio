@@ -1,0 +1,14 @@
+header{
+    width: 100vw;
+    padding: 30px;
+    border-bottom: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar__menu{
+    display: flex;
+    gap: 15px;
+
+}
