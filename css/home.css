@@ -1,17 +1,51 @@
 #home{
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 40px;
 }
 
-#home__title{
+#home__left-content{
+    line-height: 3.5em;
+}
 
+.home__title{
+    font-size: 4em;
+    font-weight: 400;
 }
 
 #home__subtitle{
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+#home__social-media{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
 
 }
+
+.social__media-icon{
+    display: inline-flex;
+    font-size:2.5rem;
+}
+
+#contact-btn{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8px;
+    height: 50px;
+    width: 180px;
+    border: 1px solid black;
+    margin-left: 40px;
+    border-radius: 50px;
+}
+
+
 
 #home__image{
     width: 35vw;
