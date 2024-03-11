@@ -1,0 +1,28 @@
+#about{
+    display: flex;
+    height: 70vh;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 100px;
+}
+
+#about__image{
+    width: 20vw;
+}
+
+#about__right{
+    width: 50vw;
+}
+
+#about__title{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#about__description{
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--bg-color);
+    line-height: 1.2em;
+}
+
