@@ -1,0 +1,96 @@
+/* Estilização básica para a seção de projetos */
+#projects {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#projects h1 {
+    color: var(--bg-color); 
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+#container__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    position: relative; /* Para que os elementos absolutos fiquem posicionados relativamente ao card */
+    overflow: hidden; /* Para garantir que a imagem não ultrapasse os limites do card */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efeito de elevação no hover */
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Cor do overlay escura */
+    transition: opacity 0.3s ease; /* Transição suave da opacidade */
+    z-index: 1; /* Garantir que o overlay fique acima da imagem */
+    opacity: 0; /* Inicialmente invisível */
+}
+
+.card:hover::before {
+    opacity: 0.5; /* Tornar o overlay semi-transparente no hover */
+}
+
+.card__content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #ffffff;
+    z-index: 2; /* Garantir que o conteúdo fique acima do overlay */
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s ease; /* Transição suave da opacidade */
+}
+
+.card:hover .card__content {
+    opacity: 1; /* Tornar o conteúdo visível no hover */
+}
+
+.card__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card__skills {
+    font-size: 18px;
+}
+
+.card__buttons {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2; /* Garantir que os botões fiquem acima do overlay */
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s ease; /* Transição suave da opacidade */
+}
+
+.card:hover .card__buttons {
+    opacity: 1; /* Tornar os botões visíveis no hover */
+}
+
+.card__buttons a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #5ad4a0; /* Cor do botão */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.card__buttons a:hover {
+    background-color: #3ca07d; /* Cor do botão no hover */
+}

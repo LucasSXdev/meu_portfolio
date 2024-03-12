@@ -12,6 +12,7 @@
 
 html{
     scroll-behavior: smooth;
+    scroll-padding-top: 90px;
     
 }
 
@@ -22,9 +23,7 @@ body{
 
 :root{
     --main-color:#5ad4a0;
-    --second-color:#d1f3e2;
     --bg-color:#13131F;
-    --second-bg:#a0a8ad;
     --third-bg:#F9F9F9;
     
 }
