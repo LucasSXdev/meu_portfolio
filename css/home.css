@@ -1,10 +1,12 @@
 #home{
     height:100vh;
+    width: 100vw;
+    max-width: 1700px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 80px 100px 0 100px;
-    background-color: var(--third-bg);
+    padding: 50px 100px 0 100px;
+    margin: 0 auto;
     
 }
 
@@ -74,9 +76,10 @@
 
 #scroll__down{
     position: absolute;
-    bottom: 20px;
+    bottom: 10%;
     left: 45%;
     font-size: 1.2em;
+    color: var(--main-color);
 }
 
 #arrow__down{
@@ -95,7 +98,8 @@
 
 
 #home__image{
-    width: 33vw;
+    width: 35vw;
+    max-width: 500px;
     animation: floating 5s ease-in-out infinite;
 }
 
