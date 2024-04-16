@@ -16,13 +16,14 @@
     justify-content: center;
     flex-wrap: wrap;
     width: 80vw;
-    margin: 0 auto;
+    margin: 50px auto;
     padding: 100px;
     gap: 30px;
 }
 
 .container__item{
-    width:120px;
+    width: 120px;
+    min-width: 120px;
     height: 120px;
     display:flex;
     flex-direction: column;
@@ -44,4 +45,11 @@
 
 .container__item svg{
     width: 50px;
+}
+
+@media(max-width:576px){
+    #skills__container{
+        width: 100vw;
+        padding:10px;
+    }
 }

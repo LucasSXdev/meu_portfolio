@@ -1,5 +1,5 @@
 
-header{
+#header{
     position: fixed;
     width: 100vw;
     padding:30px 10%;
@@ -48,4 +48,64 @@ header{
     width: 100%;  
 }
 
+#menu__mobile{
+ display: none;
+}
 
+#button__toggle{
+    background-color: transparent;
+    display: none;
+    margin-right: -30px;
+}
+
+#button__toggle span{
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: var(--main-color);
+    margin-top: 8px;
+
+}
+
+#button__toggle::after,
+#button__toggle::before{
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: var(--main-color);
+  margin-top: 8px;
+  transition: 0.3s;
+  position: relative;
+}
+
+
+
+
+@media(max-width:545px){
+
+    #header{
+       padding: 10px 10%;
+    }
+
+    #navbar__menu{
+        display: none;
+    }
+
+    #menu__mobile.active{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 80%;
+        right: 0;
+        background-color: var(--bg-color);
+        width: 200px;
+        padding: 20px;
+       
+    }
+
+    #button__toggle{
+        display: block;
+    }
+}

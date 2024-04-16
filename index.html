@@ -17,10 +17,10 @@
     <link rel="stylesheet" href="./css/contact.css">
 
     <!--scripts-->
-    <script src="./js/"></script>
+    <script src="./js/index.js" defer></script>
 </head>
 <body>
-    <header>
+    <header id="header">
         <a id="logo" href=""><span>{</span>LS<span>}</span></a>
         <nav id="navbar">
             <ul id="navbar__menu">
@@ -30,8 +30,25 @@
                 <li class="navbar__item"><a class="nav__link" href="#projects">Projetos</a></li>
                 <li class="navbar__item"><a class="nav__link" href="#contact">Contato</a></li>
             </ul>
+
+            <ul id="menu__mobile">
+                <li class="navbar__item"><a class="nav__link" href="#home">Home</a></li>
+                <li class="navbar__item"><a class="nav__link" href="#about">Sobre</a></li>
+                <li class="navbar__item"><a class="nav__link" href="#skills">Skills</a></li>
+                <li class="navbar__item"><a class="nav__link" href="#projects">Projetos</a></li>
+                <li class="navbar__item"><a class="nav__link" href="#contact">Contato</a></li>
+            </ul>
+
+            <button id="button__toggle" >
+                <span></span>
+            </button>
         </nav>
+
+       
+            
+        
     </header>
+
     <section id="home">
         <div id="home__left-content">
             <h1 class="home__title">OLÁ, EU SOU O </h1>
@@ -39,12 +56,15 @@
             <h1 class="home__title">DESENVOLVEDOR FRONT END</h1>
 
             <div id="home__social-media">
-                <a href="" class="social__media-icon"> <i class="fa-brands fa-square-github"></i></a>
-                <a href="" class="social__media-icon"> <i class="fa-brands fa-linkedin"></i></a>
-                <a href="" class="social__media-icon"> <i class="fa-brands fa-square-instagram"></i></a>
-
+                <div>
+                    <a href="" class="social__media-icon"> <i class="fa-brands fa-square-github"></i></a>
+                    <a href="" class="social__media-icon"> <i class="fa-brands fa-linkedin"></i></a>
+                    <a href="" class="social__media-icon"> <i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+                
                 <a href="" id="home-btn">Entrar em contato</a>
             </div>
+            
         </div>
         
         <a id="scroll__down" href="#about"><i class="fa-solid fa-computer-mouse"></i> Scroll down <i class="fa-solid fa-angles-down" id="arrow__down"></i></a>
